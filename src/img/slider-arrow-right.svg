@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="Arrow_Download_Save_Upload_Copy" data-name="Arrow, Download, Save, Upload Copy" transform="rotate(90)">
-    <g id="Group" transform="translate(6.999 -5)">
-      <path id="Path" d="M-.5,14V0" transform="translate(4.501) rotate(-180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
-      <path id="Path-2" data-name="Path" d="M-10,0l5,5L0,0" transform="translate(0 -8.999) rotate(-180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
-    </g>
-    <path id="Path-3" data-name="Path" d="M0,0H-24V24H0Z" transform="rotate(-180)" fill="none"/>
-  </g>
-</svg>

@@ -1,13 +1,27 @@
 @font-face{
-	font-family: 'NotoSans';
-	src: url('../fonts/NotoSans-Regular.ttf');
+	font-family: 'Jost';
+	src: url('../fonts/Jost-Regular.ttf');
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face{
-	font-family: 'NotoSans';
-	src: url('../fonts/NotoSans-Bold.ttf');
+	font-family: 'Jost';
+	src: url('../fonts/Jost-Medium.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Jost';
+	src: url('../fonts/Jost-Bold.ttf');
 	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Figtree';
+	src: url('../fonts/Figtree-Regular.ttf');
+	font-weight: 400;
 	font-display: swap;
 }

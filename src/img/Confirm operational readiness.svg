@@ -1,9 +1,0 @@
-<svg id="box-checkmark-select" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <path id="Path" d="M0,13.333H5.333a8,8,0,0,0,8-8V0" transform="translate(42.667 42.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-2" data-name="Path" d="M0,0H5.333a8,8,0,0,1,8,8v5.333" transform="translate(42.667 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-3" data-name="Path" d="M0,0V5.333a8,8,0,0,0,8,8h5.333" transform="translate(8 42.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-4" data-name="Path" d="M0,13.333V8A8,8,0,0,1,8,0h5.333" transform="translate(8 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-5" data-name="Path" d="M8.667,0,3.333,5.333,0,2" transform="translate(28 29.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-6" data-name="Path" d="M0,5.333v16a5.333,5.333,0,0,0,5.333,5.333h16a5.333,5.333,0,0,0,5.333-5.333v-16A5.333,5.333,0,0,0,21.333,0h-16A5.333,5.333,0,0,0,0,5.333Z" transform="translate(18.667 18.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-  <path id="Path-7" data-name="Path" d="M0,64V0H64V64Z" fill="none"/>
-</svg>

@@ -7,204 +7,39 @@
 }
 
 @media screen and (min-width: 640px){
-  .testimonials-slider-prev-button{
-    width: 48px;
-    height: 48px;
-    background-color: $black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .testimonials-slider-next-button{
-    width: 48px;
-    height: 48px;
-    background-color: $black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .video-button{
-    width: unset;
-  }
-  #key-industrials .slick-list{
-    padding: 0 35px!important;
-  }
+
   
 }
 
 @media screen and (min-width: 768px){
-  .testimonial-splash{
-    background-color: rgba(#231F20, 0.05);
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    &::after{
-      content: '';
-      width: 0px;
-      height: 0px;
-      border-style: solid;
-      border-width: 0 18px 84px 0;
-      border-color: transparent rgba(#231F20, 0.05) transparent transparent;
-      transform: rotate(0deg);
-      position: absolute;
-      bottom: -84px;
-      left: 40px;
-    }
-  }
-  
-  .testimonial-position{
-    padding-left: 88px;
-  }
-  .interview-title{
-    padding-top: 50px;
-    padding-bottom: 340px;
-   }
-   .interview-video{
-    margin-top: -300px;
-   }
+
 }
 
 @media screen and (min-width: 992px){
   .main-menu ul{
+    padding-left: 40px;
     display: flex;
-    gap:20px;
-    & li{
-      & a{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 400;
-        padding: 18px 10px;
-        position: relative;
-        &::after{
-          content: '';
-          width: 0;
-          height: 1px;
-          background-color: transparent;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          transition: width 0.3s ease-in-out;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        &:hover::after{
-          width: 100%;
-          background-color: #fff;
-        }
-      }
-      &.current-menu-item a::after{
-        width: 100%;
-        background-color: #fff;
-      }
-    }
-  }
-  #home-hero{
-    margin-top: -124px;
-  }
-  .triangle {
-    border-width: 0 0 90px 90px;
- }
-  #page-title{
-    margin-top: -124px;
-    background-position: center 110%;
-  }
-  #page-title.contact-title{
-    background-position: center center;
-  }
-  .key-industrials-slider{
-    & .key-industrials-slider-item{
-      transition: all 0.3s ease-in-out;
-      opacity: 1;
-    }
-    & .key-industrials-slider-item:not(.slick-active){
-      opacity: 0.3;
-    }
-  }
-  #key-industrials .slick-list{
-    padding: 0 75px!important;
-  }
-  .key-industrials-prev-button{
-    width: 48px;
-    height: 48px;
-    background-color: $black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 24px;
-    display: flex;
-    justify-content: center;
+    gap:40px;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    z-index: 99;
   }
-  .key-industrials-next-button{
-    width: 48px;
-    height: 48px;
-    background-color: $black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 99;
-  }
-  .select-field{
-    &::after{
-      width: 48px;
-      height: 48px;
-    }
-  }
-  .file-upload span{
-    height: 48px;
-  }
+
 }
 
 @media screen and (min-width: 1250px){
-   #page-title{
-    background-position: center 120%;
-  }
-  #key-industrials .slick-list{
-    padding: 0 122px!important;
-  }
+
 }
 
 @media screen and (min-width: 1450px){
-  .testimonials-slider-prev-button{
-    left: -24px;
-  }
-  .testimonials-slider-next-button{
-    right: -24px;
-  }
+
   
 }
 
 @media screen and (min-width: 1600px){
-  #page-title{
-    background-size: 80%;
-  }
+
   
 }
 
 @media screen and (min-width: 1920px){
-  #key-industrials .slick-list{
-    padding: 0 50px!important;
-  }
+
 }

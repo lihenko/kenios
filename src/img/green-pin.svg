@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15.746" height="20" viewBox="0 0 15.746 20">
-  <g id="marker-pin.2" transform="translate(1 1)">
-    <path id="Path" d="M0,7.045V6.873A6.873,6.873,0,0,1,6.873,0h0a6.873,6.873,0,0,1,6.873,6.873v.172c0,3.461-4.382,8.671-6.148,10.631a.973.973,0,0,1-1.45,0C4.382,15.716,0,10.506,0,7.045Z" fill="none" stroke="#03572d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-    <path id="Path-2" data-name="Path" d="M0,2.037a2,2,0,0,0,2,2H2a2,2,0,0,0,2-2V2A2,2,0,0,0,2,0H2A2,2,0,0,0,0,2" transform="translate(4.873 4.918)" fill="none" stroke="#03572d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-  </g>
-</svg>
