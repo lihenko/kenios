@@ -1,0 +1,11 @@
+<svg id="book-lab-flask" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group" transform="translate(8 8)">
+    <path id="Path" d="M42.667,13.333v-8h0A5.333,5.333,0,0,0,37.333,0h-32A5.333,5.333,0,0,0,0,5.333H0V40" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-2" data-name="Path" d="M1.333,0V34.667" transform="translate(9.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-3" data-name="Path" d="M21.333,0h-16A5.333,5.333,0,0,0,0,5.333H0a5.333,5.333,0,0,0,5.333,5.333H18.667" transform="translate(0 34.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-4" data-name="Path" d="M12,1.333H0" transform="translate(32.933 20)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-5" data-name="Path" d="M15.727,0V10.085l6.915,11.093h0a5.333,5.333,0,0,1-4.515,8.155H5.341A5.333,5.333,0,0,1,.807,21.179L7.722,10.085V0" transform="translate(27.206 21.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-6" data-name="Path" d="M8.72,1.333H0" transform="translate(34.587 30.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <path id="Path-7" data-name="Path" d="M0,0H64V64H0Z" fill="none"/>
+</svg>
