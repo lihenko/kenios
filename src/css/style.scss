@@ -127,7 +127,7 @@ body, html{
     }
 
     a{
-      @apply transition-all text-darkblue;
+      @apply transition-all text-darkblue cursor-pointer;
       &:hover{
         @apply text-blue;
       }
@@ -186,6 +186,10 @@ body, html{
    border-color: transparent transparent transparent $blue;
    bottom: -256px;
     right: 0;
+  }
+
+  .legal-link:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1)
   }
 
   .marked-list{
