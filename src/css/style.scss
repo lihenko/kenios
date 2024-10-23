@@ -41,12 +41,11 @@ body, html{
     }
 
     input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
-      color: $black;
-      border-radius: 0;
+      @apply font-jost text-xs text-darkblue;
+      border-radius: 23px;
       width: 100%;
       padding: 12px 23px;
-      font-size: 16px;
-      background-color: #F4F4F4;
+      border: 1px solid #12143E;
     }
     input:focus{
       outline:none!important;
@@ -128,9 +127,9 @@ body, html{
     }
 
     a{
-      @apply transition-all text-green;
+      @apply transition-all text-darkblue;
       &:hover{
-        @apply text-black;
+        @apply text-blue;
       }
     }
     .btn{
@@ -156,6 +155,12 @@ body, html{
         @apply text-darkblue bg-white;
       }
     }  
+    .white-btn{
+      @apply text-darkblue bg-white;
+      &:hover{
+        @apply text-white bg-darkblue;
+      }
+    } 
   }
 
   .menu-button a{
@@ -178,14 +183,74 @@ body, html{
   }
 
   .marked-list{
-    margin: 0 0 40px;
     padding: 0;
     list-style: none;
     & li{
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       padding-left: 32px;
+      &:before{
+        content: url(../img/checkmark-big-circle.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
+#cta{
+  background: linear-gradient(#12143E, #12143E 175px, #87CEEB 175px, #87CEEB 100%);
+}
+
+.footer-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  & li{
+    margin-bottom: 15px;
+    & a{
+      @apply font-jost text-xs text-darkblue;
+      &:hover{
+        @apply text-blue;
+      }
+
+    }
+  }
+}
+
+.footer-phone{
+  position: relative;
+  padding-left: 45px;
+  &::before{
+    content: url(../img/phone.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+}
+
+.footer-email{
+  position: relative;
+  padding-left: 45px;
+  &::before{
+    content: url(../img/email.svg);
+    position: absolute;
+    top: -4px;
+    left: 2px;
+  }
+}
+
+.footer-address{
+  position: relative;
+  padding-left: 45px;
+  &::before{
+    content: url(../img/address.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+}
 
 @import "./media";

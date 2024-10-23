@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.5" height="19.5" viewBox="0 0 19.5 19.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1 {
+        stroke: #87ceeb;
+        stroke-linecap: square;
+      }
+
+      .cls-2 {
+        stroke: #12143e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="checkmark-big-circle" transform="translate(0.75 0.75)">
+    <path id="Path" class="cls-1" d="M2.25,2.25,0,0" transform="translate(6 9)"/>
+    <path id="Path-2" data-name="Path" class="cls-1" d="M3.75,0,0,3.75" transform="translate(8.25 7.5)"/>
+    <rect id="Rectangle" class="cls-2" width="18" height="18" rx="9" transform="translate(0 18) rotate(-90)"/>
+  </g>
+</svg>

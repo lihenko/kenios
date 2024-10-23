@@ -6,9 +6,17 @@
 
 }
 
+@media screen and (min-width: 517px){
+  #cta{
+    background: linear-gradient(#12143E, #12143E 140px, #87CEEB 140px, #87CEEB 100%);
+  }
+}
+
 @media screen and (min-width: 640px){
 
-  
+  #cta{
+    background: linear-gradient(#12143E, #12143E 150px, #87CEEB 150px, #87CEEB 100%);
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -34,11 +42,29 @@
       }
     }
   }
-
+  #cta{
+    background: linear-gradient(#12143E, #12143E 130px, #87CEEB 130px, #87CEEB 100%);
+  }
 }
 
 @media screen and (min-width: 1250px){
-
+  #cta{
+    background: linear-gradient(90deg, #12143E, #12143E calc(50% + 300px), #87CEEB calc(50% + 300px), #87CEEB 100%);
+    position: relative;
+    &:before{
+      content: '';
+        position: absolute;
+        left: calc(50% + 300px - 143px);
+        top: 0;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 0 144px 143px;
+        border-color: transparent transparent #87CEEB transparent;
+        transform: rotate(0deg);
+    }
+  }
 }
 
 @media screen and (min-width: 1450px){
