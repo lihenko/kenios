@@ -188,8 +188,12 @@ body, html{
     right: 0;
   }
 
-  .legal-link:hover{
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1)
+  .legal-link{
+    border: 2px solid transparent;
+    transition: border 0.15s ease-in-out;
+    &:hover{
+      border: 2px solid #12143E;
+    }
   }
 
   .marked-list{
