@@ -22,6 +22,17 @@
     gap:40px;
     justify-content: space-between;
     align-items: center;
+    & li{
+      & a{
+        @apply text-darkblue;
+        &:hover{
+          @apply text-blue;
+        }
+      }
+      &.current-menu-item a{
+        @apply text-blue;
+      }
+    }
   }
 
 }
@@ -31,7 +42,11 @@
 }
 
 @media screen and (min-width: 1450px){
-
+  .home-hero-triangle{
+   border-width: 111px 0 111px 92px;
+   bottom: -287px;
+    right: -46px;
+  }
   
 }
 

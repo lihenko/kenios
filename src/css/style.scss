@@ -12,22 +12,22 @@ body, html{
 
 @layer components {
     body{
-        @apply bg-white text-black text-sm lg:text-base;
+        @apply bg-white text-black text-sm leading-[1.5];
     }
     h1, .h1{
-        @apply text-[38px] lg:text-[64px] xl:text-[66px] leading-[1.2] font-bold font-jost;
+        @apply text-[24px] lg:text-[28px] xl:text-[36px] leading-[1.11] font-bold font-jost text-darkblue;
     }
     h2, .h2{
-      @apply text-[32px] lg:text-[36px] xl:text-[46px] leading-[1.2] font-bold font-jost;
+      @apply text-[20px] lg:text-[26px] xl:text-[32px] leading-[1.11] font-bold font-jost text-darkblue;
     }
     h3, .h3{
-      @apply text-[28px] lg:text-[32px] xl:text-[36px] leading-[1.2] font-bold font-jost;
+      @apply text-[28px] lg:text-[32px] xl:text-[36px] leading-[1.11] font-bold font-jost text-darkblue;
     }
     h4, .h4{
-        @apply text-[20px] lg:text-[24px] xl:text-[26px] leading-[1.2] font-bold font-jost;
+        @apply text-[20px] lg:text-[24px] xl:text-[26px] leading-[1.2] font-bold font-jost text-darkblue;
     }
     h5{
-        @apply text-[18px] lg:text-[22px] font-bold leading-[1.2] font-jost;
+        @apply text-[16px] lg:text-[18px] font-bold leading-[1.11] font-jost text-darkblue;
     }
     p{
         @apply mb-3 sm:mb-8;
@@ -134,13 +134,12 @@ body, html{
       }
     }
     .btn{
-      @apply transition-all py-[13px] px-5 text-sm font-medium rounded-3xl inline-block w-[240px] max-w-full text-center cursor-pointer;
+      @apply transition-all py-[13px] px-5 text-sm font-medium rounded-3xl inline-block w-[240px] max-w-full text-center cursor-pointer font-jost;
     }
     .blue-btn{
       @apply text-darkblue bg-blue;
       &:hover{
-        @apply bg-darkblue;
-        color: #fff;
+        @apply bg-darkblue text-white;
       }
     }
     .black-btn{
@@ -152,11 +151,9 @@ body, html{
       }
     }
     .outline-btn{
-      color: #fff;
-      border: 1px solid #fff;
+      @apply text-white border-white border;
       &:hover{
-        color: $green;
-        background-color: #fff;
+        @apply text-darkblue bg-white;
       }
     }  
   }
@@ -164,7 +161,31 @@ body, html{
   .menu-button a{
     @extend .btn, .blue-btn;
     width: 214px;
+    &:hover{
+      color: #fff!important;
+    }
   }
 
+  .home-hero-triangle{
+    position: absolute;
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 80px 0 80px 66px;
+   border-color: transparent transparent transparent $blue;
+   bottom: -256px;
+    right: 0;
+  }
+
+  .marked-list{
+    margin: 0 0 40px;
+    padding: 0;
+    list-style: none;
+    & li{
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 32px;
+    }
+  }
 
 @import "./media";
