@@ -60,7 +60,7 @@
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-width: 0 0 144px 143px;
+        border-width: 0 0 143px 143px;
         border-color: transparent transparent #87CEEB transparent;
         transform: rotate(0deg);
     }
@@ -73,7 +73,11 @@
    bottom: -287px;
     right: -46px;
   }
-  
+  .page-title-triangle{
+    border-width: 111px 0 111px 92px;
+    bottom: -207px;
+     right: -46px;
+   }
 }
 
 @media screen and (min-width: 1600px){

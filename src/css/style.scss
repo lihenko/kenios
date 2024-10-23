@@ -18,19 +18,19 @@ body, html{
         @apply text-[24px] lg:text-[28px] xl:text-[36px] leading-[1.11] font-bold font-jost text-darkblue;
     }
     h2, .h2{
-      @apply text-[20px] lg:text-[26px] xl:text-[32px] leading-[1.11] font-bold font-jost text-darkblue;
+      @apply text-[20px] lg:text-[26px] xl:text-[32px] leading-[1.11] font-semibold font-jost text-darkblue;
     }
     h3, .h3{
-      @apply text-[28px] lg:text-[32px] xl:text-[36px] leading-[1.11] font-bold font-jost text-darkblue;
+      @apply text-[28px] lg:text-[32px] xl:text-[36px] leading-[1.11] font-semibold font-jost text-darkblue;
     }
     h4, .h4{
-        @apply text-[20px] lg:text-[24px] xl:text-[26px] leading-[1.2] font-bold font-jost text-darkblue;
+        @apply text-[20px] lg:text-[24px] xl:text-[26px] leading-[1.2] font-semibold font-jost text-darkblue;
     }
     h5{
-        @apply text-[16px] lg:text-[18px] font-bold leading-[1.11] font-jost text-darkblue;
+        @apply text-[16px] lg:text-[18px] leading-[1.11] font-semibold text-darkblue;
     }
     p{
-        @apply mb-3 sm:mb-8;
+        @apply mb-3 sm:mb-6;
     }
     .container{
         @apply mx-auto px-3;
@@ -139,6 +139,12 @@ body, html{
       @apply text-darkblue bg-blue;
       &:hover{
         @apply bg-darkblue text-white;
+      }
+    }
+    .darkblue-btn{
+      @apply text-white bg-darkblue;
+      &:hover{
+        @apply bg-blue text-darkblue;
       }
     }
     .black-btn{
@@ -250,6 +256,17 @@ body, html{
     top: -4px;
     left: 0;
   }
+}
+
+.page-title-triangle{
+  position: absolute;
+ width: 0px;
+ height: 0px;
+ border-style: solid;
+ border-width: 80px 0 80px 66px;
+ border-color: transparent transparent transparent $blue;
+ bottom: -176px;
+  right: 0;
 }
 
 @import "./media";
