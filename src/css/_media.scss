@@ -71,12 +71,12 @@
           right: -25px;
         }
         &:hover{
-          @apply bg-white text-darkblue z-10;
+          @apply bg-blue text-darkblue z-20;
           & .right-arc path{
-            fill:#fff;
+            fill:#87ceeb;
           }
           & .left-arc path{
-            fill: #fff;
+            fill: #87ceeb;
           }
         }
         &.active{
