@@ -45,6 +45,52 @@
   #cta{
     background: linear-gradient(#12143E, #12143E 130px, #87CEEB 130px, #87CEEB 100%);
   }
+  .services-navigation{
+    width: 100%;
+    & ul{
+      display: flex;
+      justify-content: center;
+      & li{
+        position: relative;
+        width: 336px;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        @apply bg-darkblue text-white cursor-pointer uppercase font-semibold;
+        & .left-arc{
+          position: absolute;
+          bottom: 0;
+          left: -25px;
+        }
+        & .right-arc{
+          position: absolute;
+          bottom: 0;
+          right: -25px;
+        }
+        &:hover{
+          @apply bg-white text-darkblue z-10;
+          & .right-arc path{
+            fill:#fff;
+          }
+          & .left-arc path{
+            fill: #fff;
+          }
+        }
+        &.active{
+          @apply bg-white text-darkblue z-10;
+          & .right-arc path{
+            fill:#fff;
+          }
+          & .left-arc path{
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1250px){

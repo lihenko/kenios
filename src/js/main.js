@@ -41,6 +41,22 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
   
 });
 
+var service_select = jQuery('#services-navigation');
+var service_navigation = jQuery('.services-navigation');
+var service_data = jQuery('.services-data');
+
+service_select.on('change', function () {
+  var service = this.value;
+  service_data.find('.service-data-wrap').removeClass('active');
+  service_navigation.find('ul li').removeClass('active');
+  service_data.find('#' + service).addClass('active');
+  service_navigation.find('[data-service="' + service + '"]').addClass('active');
+});
+
+service_navigation.find('li').on('click', function () {
+  var service = jQuery(this).data('service');
+  service_select.val(service).change();
+});
 
 jQuery('.testimonials-slider').slick({
   autoplay: true,

@@ -24,10 +24,10 @@ body, html{
       @apply text-[28px] lg:text-[32px] xl:text-[36px] leading-[1.11] font-semibold font-jost text-darkblue;
     }
     h4, .h4{
-        @apply text-[20px] lg:text-[24px] xl:text-[26px] leading-[1.2] font-semibold font-jost text-darkblue;
+        @apply text-[18px] lg:text-[20px] leading-[1.11] font-semibold font-jost text-darkblue;
     }
     h5{
-        @apply text-[16px] lg:text-[18px] leading-[1.11] font-semibold text-darkblue;
+        @apply text-[16px] lg:text-[18px] leading-[1.11] font-semibold font-jost text-darkblue;
     }
     p{
         @apply mb-3 sm:mb-6;
@@ -276,6 +276,24 @@ body, html{
  border-color: transparent transparent transparent $blue;
  bottom: -176px;
   right: 0;
+}
+
+.service-data-wrap{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.blog-wrap > a{
+  display: block;
+}
+
+.blog-thumbnail{
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 375/265;
+  margin-bottom: 42px;
 }
 
 @import "./media";
