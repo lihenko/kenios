@@ -189,6 +189,7 @@ body, html{
   }
 
   .legal-link{
+    display: block;
     border: 2px solid transparent;
     transition: border 0.15s ease-in-out;
     &:hover{
