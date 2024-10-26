@@ -320,4 +320,16 @@ footer a{
   margin-bottom: 42px;
 }
 
+#entry-content p{
+  text-align: justify;
+}
+
+#entry-content h2, #entry-content h3, #entry-content h4, #entry-content h5{
+  @apply mb-6;
+}
+
+#entry-content .marked-list{
+  @apply mb-6;
+}
+
 @import "./media";
