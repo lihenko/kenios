@@ -127,13 +127,13 @@ body, html{
     }
 
     a{
-      @apply transition-all text-darkblue cursor-pointer;
+      @apply transition-all text-darkblue cursor-pointer underline;
       &:hover{
         @apply text-blue;
       }
     }
     .btn{
-      @apply transition-all py-[13px] px-5 text-sm font-medium rounded-3xl inline-block w-[240px] max-w-full text-center cursor-pointer font-jost;
+      @apply transition-all py-[13px] px-5 text-sm font-medium rounded-3xl inline-block w-[240px] max-w-full text-center cursor-pointer font-jost no-underline;
     }
     .blue-btn{
       @apply text-darkblue bg-blue;
@@ -169,8 +169,26 @@ body, html{
     } 
   }
 
+  .list-disc{
+    list-style: none;
+    @apply mb-6;
+    & li{
+      position: relative;
+      padding-left: 45px;
+      @apply mb-6;
+      &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        @apply bg-blue absolute top-[6px] left-0;
+      }
+    }
+  }
+
   .menu-button a{
     @extend .btn, .blue-btn;
+    @apply no-underline;
     width: 214px;
     &:hover{
       color: #fff!important;
@@ -189,6 +207,7 @@ body, html{
   }
 
   .legal-link{
+    @apply no-underline;
     display: block;
     border: 2px solid transparent;
     transition: border 0.15s ease-in-out;
@@ -220,13 +239,17 @@ body, html{
   background: linear-gradient(#12143E, #12143E 175px, #87CEEB 175px, #87CEEB 100%);
 }
 
+footer a{
+  @apply no-underline;
+}
+
 .footer-menu{
   padding: 0;
   list-style: none;
   & li{
     margin-bottom: 15px;
     & a{
-      @apply font-jost text-xs text-darkblue;
+      @apply font-jost text-xs text-darkblue no-underline;
       &:hover{
         @apply text-blue;
       }

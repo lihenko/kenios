@@ -32,7 +32,7 @@
     align-items: center;
     & li{
       & a{
-        @apply text-darkblue;
+        @apply text-darkblue no-underline;
         &:hover{
           @apply text-blue;
         }
@@ -59,6 +59,10 @@
         align-items: center;
         border-top-left-radius: 26px;
         border-top-right-radius: 26px;
+        text-align: center;
+        line-height: 1;
+        padding-left: 35px;
+        padding-right: 35px;
         @apply bg-darkblue text-white cursor-pointer uppercase font-semibold;
         & .left-arc{
           position: absolute;
@@ -97,6 +101,7 @@
   #cta{
     background: linear-gradient(90deg, #12143E, #12143E calc(50% + 300px), #87CEEB calc(50% + 300px), #87CEEB 100%);
     position: relative;
+    max-height: 143px;
     &:before{
       content: '';
         position: absolute;
@@ -109,6 +114,14 @@
         border-width: 0 0 143px 143px;
         border-color: transparent transparent #87CEEB transparent;
         transform: rotate(0deg);
+    }
+  }
+  .services-navigation{
+    & ul{
+      & li{
+        padding-left: 45px;
+        padding-right: 45px;
+      }
     }
   }
 }
