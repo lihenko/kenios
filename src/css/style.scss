@@ -49,44 +49,43 @@ body, html{
     }
     input:focus{
       outline:none!important;
+      border-color: #87CEEB;
     }
     input::placeholder{
         @apply text-black;
     }
     .select-field{
-      color: $black;
-      border-radius: 0;
+      @apply font-jost text-xs text-darkblue;
+      border-radius: 23px;
+      border: 1px solid #12143E;
       width: 100%;
       padding: 12px 50px 12px 23px;
-      font-size: 16px;
-      background-color: #F4F4F4;
       cursor: pointer;
       &::after{
         content: url(../img/dropdown-arrow.svg);
         width: 44px;
         height: 44px;
         position: absolute;
-        background-color: $green;
-        top: 0;
+        top: 5px;
         right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 3px;
       }
     }
     .select-wrap{
       position: relative;
       & ul.select-list{
-        margin: 0;
+        @apply font-jost text-xs text-darkblue;
+        margin: 0 23px;
         padding: 0;
-        background-color: #F4F4F4;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         z-index: 90;
         display: none;
+        background-color: #F4F4F4;
         & li{
           padding: 12px 23px;
           cursor: pointer;
@@ -95,21 +94,21 @@ body, html{
           }
         }
       }
-      &:hover ul.select-list{
+      &.active ul.select-list{
         display: block;
       }
     }
     textarea{
-      color: $black;
-      border-radius: 0;
+      @apply font-jost text-xs text-darkblue;
+      border-radius: 23px;
       width: 100%;
-      height: 145px;
-      padding: 13px 23px;
-      font-size: 16px;
-      background-color: #F4F4F4;
+      height: 130px;
+      padding: 12px 23px;
+      border: 1px solid #12143E;
     }
     textarea:focus{
         outline:none!important;
+        border-color: #87CEEB;
     }
     textarea::placeholder{
         @apply text-black;
@@ -291,6 +290,12 @@ footer a{
   }
 }
 
+#page-title{
+  min-height: 275px;
+  display: flex;
+  align-items: center;
+}
+
 .page-title-triangle{
   position: absolute;
  width: 0px;
@@ -300,6 +305,7 @@ footer a{
  border-color: transparent transparent transparent $blue;
  bottom: -176px;
   right: 0;
+  z-index: 10;
 }
 
 .service-data-wrap{
@@ -331,6 +337,94 @@ footer a{
 
 #entry-content .marked-list{
   @apply mb-6;
+}
+
+#contact a{
+  @apply font-jost no-underline text-lg font-semibold text-darkblue hover:text-blue;
+}
+
+.featured-posts{
+  & a{
+    text-decoration: none;
+    display: block;
+    @apply font-jost;
+    & .featured-thumbnail{
+      width: 100%;
+      aspect-ratio: 572/405;
+      background-position: center;
+      background-size: cover;
+      padding: 25px 30px 25px 45px;
+    }
+    & h4{
+      font-size: 26px;
+      color: #fff;
+      position: absolute;
+      bottom: 60px;
+      left: 45px;
+      right: 30px;
+    }
+    & .read-more{
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 12px;
+      @apply text-blue;
+      bottom: 25px;
+      left: 45px;
+      right: 30px;
+      font-weight: 700;
+    }
+    &:hover .read-more{
+      @apply text-white;
+    }
+    & .overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(rgba(18, 20, 62, 0),rgb(18, 20, 62));
+    }
+  }
+}
+
+.blog-navigation{
+  & .nav-title{
+    margin-right: 6px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  & .pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+  }
+  & .numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  & .page-numbers{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    &.current{
+      background-color: #12143E;
+      color: #fff;
+    }
+    &:hover:not(.dots):not(.current){
+      background-color: #87CEEB;
+    }
+  }
 }
 
 @import "./media";

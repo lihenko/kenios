@@ -44,18 +44,33 @@ jQuery(document).on('click', 'a[href^="#"]', function (event) {
 var service_select = jQuery('#services-navigation');
 var service_navigation = jQuery('.services-navigation');
 var service_data = jQuery('.services-data');
+var select = jQuery('.select-wrap');
 
 service_select.on('change', function () {
   var service = this.value;
+  var service_name = service_select.find('option:selected').text();
   service_data.find('.service-data-wrap').removeClass('active');
   service_navigation.find('ul li').removeClass('active');
   service_data.find('#' + service).addClass('active');
   service_navigation.find('[data-service="' + service + '"]').addClass('active');
+  select.find('.select-field').text(service_name);
 });
 
 service_navigation.find('li').on('click', function () {
   var service = jQuery(this).data('service');
   service_select.val(service).change();
+});
+
+select.on('click', function () {
+  jQuery(this).toggleClass('active');
+});
+
+select.find('.select-list li').on('click', function () {
+  var option = jQuery(this).data('value');
+  var option_name = jQuery(this).text();
+  jQuery(this).parents('.select-wrap').find('select').val(option).change();
+  jQuery(this).parents('.select-wrap').find('.select-field').text(option_name);
+  service_navigation.find('[data-service="' + option + '"]').addClass('active');
 });
 
 jQuery('.testimonials-slider').slick({
@@ -90,171 +105,7 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 
-var decimal_places = 0;
-var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 10;
-
-  
-jQuery('#countries').viewportChecker( {
-  offset: 100, 
-  repeat: false,
-  callbackFunction: function(elem, action){
-    elem.animateNumber(
-      {
-        number: 30 * decimal_factor,
-        numberStep: function(now, tween) {
-          var floored_number = Math.floor(now) / decimal_factor,
-              target = jQuery(tween.elem);
-          if (decimal_places > 0) {
-            floored_number = floored_number.toFixed(decimal_places);
-          }
-  
-          target.text(floored_number + '+');
-        }
-      },
-      5000
-    )
-  }, 
-});
-
-jQuery('#units').viewportChecker( {
-  offset: 100, 
-  repeat: false,
-  callbackFunction: function(elem, action){
-    elem.animateNumber(
-      {
-        number: 2 * decimal_factor,
-        numberStep: function(now, tween) {
-          var floored_number = Math.floor(now) / decimal_factor,
-              target = jQuery(tween.elem);
-          if (decimal_places > 0) {
-            floored_number = floored_number.toFixed(decimal_places);
-          }
-  
-          target.text(floored_number + 'M+');
-        }
-      },
-      5000
-    )
-  }, 
-});
-
-jQuery('#years').viewportChecker( {
-  offset: 100, 
-  repeat: false,
-  callbackFunction: function(elem, action){
-    elem.animateNumber(
-      {
-        number: 50 * decimal_factor,
-        numberStep: function(now, tween) {
-          var floored_number = Math.floor(now) / decimal_factor,
-              target = jQuery(tween.elem);
-          if (decimal_places > 0) {
-            floored_number = floored_number.toFixed(decimal_places);
-          }
-  
-          target.text(floored_number + '+');
-        }
-      },
-      5000
-    )
-  }, 
-});
-
-jQuery('#history').viewportChecker( {
-  offset: 100, 
-  repeat: false,
-  callbackFunction: function(elem, action){
-    elem.animateNumber(
-      {
-        number: 20 * decimal_factor,
-        numberStep: function(now, tween) {
-          var floored_number = Math.floor(now) / decimal_factor,
-              target = jQuery(tween.elem);
-          if (decimal_places > 0) {
-            floored_number = floored_number.toFixed(decimal_places);
-          }
-  
-          target.text(floored_number + '+');
-        }
-      },
-      5000
-    )
-  }, 
-});
+ 
 
 
-jQuery('.key-industrials-slider')
-.on('init', (event, slick, currentSlide, nextSlide) => {
-  var active_slides = document.querySelectorAll("#key-industrials .slick-active");
-  var count = active_slides.length;
-  active_slides[0].classList.add('first-slide');
-  active_slides[count-1].classList.add('last-slide');
-})
-.slick({
-  infinite: true,
-  dots:false,
-  arrows:true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  centerMode:true,
-  centerPadding:'12px',
-  autoplay: true,
-  autoplaySpeed: 2000,
-  nextArrow: jQuery('.key-industrials-prev-button'),
-  prevArrow: jQuery('.key-industrials-next-button'),
-  responsive: [
-    {
-      breakpoint: 1920,
-      settings: {
-        slidesToShow: 3,
-        arrows: true,
-        dots:false,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        arrows: false,
-        dots:true,
-      }
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-        arrows: false,
-        dots:true,
-      }
-    }
-  ]
-})
-.on('beforeChange', (event, slick, currentSlide, nextSlide) => {
-  
-  
-})
-.on('afterChange', (event, slick, currentSlide, nextSlide) => {
-  var allslides = jQuery("#key-industrials .key-industrials-slider-item");
-  allslides.removeClass('first-slide');
-  allslides.removeClass('last-slide');
-  var active_slides = document.querySelectorAll("#key-industrials .slick-active");
-  var count = active_slides.length;
-  active_slides[0].classList.add('first-slide');
-  active_slides[count-1].classList.add('last-slide');
-});
 
-var select = jQuery('.select-wrap');
-
-select.find('.select-list li').on('click', function () {
-  var option = jQuery(this).text();
-  jQuery(this).parents('.select-wrap').find('input').val(option);
-  jQuery(this).parents('.select-wrap').find('.select-field').text(option);
-});
-
-
-jQuery(document).ready( function() {
-  jQuery(".file-upload input[type=file]").change(function(){
-       var filename = jQuery(this).val().replace(/.*\\/, "");
-       jQuery("#filename").val(filename);
-  });
-});

@@ -58,7 +58,7 @@
       <div class="container relative">
         <div class="w-full text-center lg:text-left xl:pl-20">
           <h1 class="text-white uppercase lg:max-w-[530px] mb-8">Legal Services</h1>
-          <div class="text-white text-lg lg:max-w-[670px]">Liberating your internal teams to focus on your core business and big-ticket strategic items.</div>
+          <div class="text-white text-lg lg:max-w-[675px]">Liberating your internal teams to focus on your core business and big-ticket strategic items.</div>
         </div>
         <div class="page-title-triangle"></div>
       </div>
@@ -74,10 +74,22 @@
     <section id="services" class="pt-20 pb-16 bg-[#fafafa]">
         <div class="container">
             <div class="lg:hidden bg-white px-8 pt-6">
-                <select name="" id="services-navigation">
+                <div class="select-wrap">
+                  <select name="" id="services-navigation" class="hidden">
                     <option value="managed-legal-services">Managed Legal Services</option>
                     <option value="general-legal-services">General Legal Services</option>
-                </select>
+                  </select>
+                  <div class="select-field">Managed Legal Services</div>
+                    <ul class="select-list">
+                      <li data-value="managed-legal-services">
+                        Managed Legal Services
+                      </li>
+                      <li data-value="general-legal-services">
+                        General Legal Services
+                      </li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="services-navigation hidden lg:block">
                 <ul>

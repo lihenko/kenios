@@ -17,6 +17,17 @@
   #cta{
     background: linear-gradient(#12143E, #12143E 150px, #87CEEB 150px, #87CEEB 100%);
   }
+  .blog-navigation{
+    & .nav-title{
+      margin-right: 6px;
+      flex-basis: 40px;
+      margin-bottom: 0;
+    }
+  
+    & .pagination{
+      flex-basis: calc(100% - 46px);
+    }
+  }
 }
 
 @media screen and (min-width: 768px){

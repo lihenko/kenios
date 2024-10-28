@@ -58,7 +58,7 @@
       <div class="container relative">
         <div class="w-full text-center lg:text-left xl:pl-20">
           <h1 class="text-white uppercase lg:max-w-[530px] mb-8">Legal Operations and Digital Transformation</h1>
-          <div class="text-white text-lg lg:max-w-[670px]">Optimising the delivery of legal services to your organisation.</div>
+          <div class="text-white text-lg lg:max-w-[675px]">Optimising the delivery of legal services to your organisation.</div>
         </div>
         <div class="page-title-triangle"></div>
       </div>
@@ -74,10 +74,21 @@
     <section id="services" class="pt-20 pb-16 bg-[#fafafa]">
         <div class="container">
             <div class="lg:hidden bg-white px-8 pt-6">
-                <select name="" id="services-navigation">
+                <div class="select-wrap">
+                  <select name="" id="services-navigation" class="hidden">
                     <option value="legal-operations">Legal Operations</option>
                     <option value="digital-transformation">Digital Transformation</option>
-                </select>
+                  </select>
+                  <div class="select-field">Legal Operations</div>
+                    <ul class="select-list">
+                      <li data-value="legal-operations">
+                        Legal Operations
+                      </li>
+                      <li data-value="digital-transformation">
+                        Digital Transformation
+                      </li>
+                    </ul>
+                </div>
             </div>
             <div class="services-navigation hidden lg:block">
                 <ul>
